@@ -52,10 +52,12 @@ public class Library {
         System.out.println("--- Late fees if " + daysLate + " day(s) late ---");
 
         for (LibraryItem item : items) {
-            System.out.println(
-                    item.getTitle() + ": " + item.calculateLateFee(daysLate)
-            );
-        }
+    System.out.println(
+        item.getTitle() + " (" +
+        item.getClass().getSimpleName() + "): " +
+        item.calculateLateFee(daysLate)
+    );
+}
     }
 
     public void streamIfPossible(LibraryItem item) {

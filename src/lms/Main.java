@@ -6,6 +6,7 @@ import lms.model.Student;
 import lms.model.Staff;
 import lms.service.Library;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -27,5 +28,8 @@ public class Main {
 
         library.streamIfPossible(d1);
         library.streamIfPossible(b1);
+
+     
+
     }
 }
