@@ -1,14 +1,18 @@
+
 package lms.model;
+
 public class Member {
 
     private String memberId;
     private String name;
     private int borrowedCount;
+    private int maxBorrowLimit;
 
-    public Member(String memberId, String name) {
+    public Member(String memberId, String name, int maxBorrowLimit) {
         setMemberId(memberId);
         setName(name);
         this.borrowedCount = 0;
+        this.maxBorrowLimit = maxBorrowLimit;
     }
 
     public String getMemberId() {
@@ -21,6 +25,10 @@ public class Member {
 
     public int getBorrowedCount() {
         return borrowedCount;
+    }
+
+    public int getMaxBorrowLimit() {
+        return maxBorrowLimit;
     }
 
     public void setMemberId(String memberId) {
